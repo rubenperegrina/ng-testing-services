@@ -28,16 +28,27 @@ describe('ValueService', () => {
   describe('Tests for getPromiseValue', () => {
     it('should return "promise value" from promise with then', (doneFn) => {
       service.getPromiseValue()
-      .then((value) => {
-        // assert
-        expect(value).toBe('promise value');
-        doneFn();
-      });
+        .then((value) => {
+          // assert
+          expect(value).toBe('promise value');
+          doneFn();
+        });
     });
 
     it('should return "promise value" from promise using async', async () => {
       const rta = await service.getPromiseValue();
       expect(rta).toBe('promise value');
+    });
+  });
+
+  describe('Tests for getObservableValue', () => {
+    it('should return "observable value" from observable', (doneFn) => {
+      service.getObservableValue()
+        .subscribe((value) => {
+          // assert
+          expect(value).toBe('observable value');
+          doneFn();
+        });
     });
   });
 

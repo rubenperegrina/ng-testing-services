@@ -11,6 +11,7 @@ export class ValueService {
   constructor() { }
 
   getValue() {
+    // code
     return this.value;
   }
 
