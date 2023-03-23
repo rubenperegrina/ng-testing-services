@@ -44,3 +44,35 @@ describe('Test for Calculator', () => {
         expect(['apples', 'oranges', 'pears']).toContain('oranges');
     });
 });
+
+//  Comunes
+// .toBe();
+// .not.toBe();
+// .toEqual();
+
+//  Veracidad
+// .toBeNull()
+// .toBeUndefined()
+// .toBeDefined()
+// .toBeUndefined()
+// .toBeTruthy() 
+// .toBeFalsy() 
+
+//  Números
+// .toBeGreaterThan(3);
+// .toBeGreaterThanOrEqual(3.5);
+// .toBeLessThan(5);
+// .toBeLessThanOrEqual(4.5);
+
+// Números decimales
+// expect(0.3).toBeCloseTo(0.3)
+
+//  Strings
+// .not.toMatch(/I/);
+// .toMatch(/stop/);
+
+//  Arrays
+// .toContain('milk');
+
+// Excepciones
+// myfunction.toThrow(Error);
